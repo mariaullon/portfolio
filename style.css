@@ -1,0 +1,221 @@
+h1 {
+    color: white;
+   }
+   
+   h2 {
+    color:rgb(161, 87, 155);
+   }
+   
+   body {
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+       color: #734b6d;
+       padding-top: 70px;
+   }
+   
+   nav {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       background-color: #fff;
+       box-shadow: 0 0 5px;
+   }
+   
+   .menu-item {
+       text-decoration: none;
+       color: #000000;
+       padding: 10px;
+       display: inline-block;
+   }
+   
+   .menu-item:hover {
+       background-color: #ddd;
+       transition: all 0.4s ease-in-out;
+   }
+   
+   header {
+       background-color: #42275a;
+       color: #fff;
+       text-align: center;
+       padding: 20px;
+       margin-bottom: 20px;
+   }
+   
+   section {
+       padding: 20px;
+       border: 1px solid #ddd;
+       margin-bottom: 20px;
+   }
+   
+   #acerca-de-mí {
+       text-align: justify;
+   }
+   
+   #habilidades ul {
+       list-style: none;
+       padding: 0;
+   }
+   
+   #habilidades ul li {
+       display: inline-block;
+       padding: 5px;
+       border: 1px solid #000000;
+       border-radius: 5px;
+       margin-right: 10px;
+   }
+   
+   #experiencia ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+   }
+   
+   #experiencia ul li {
+       margin: 10px;
+   }
+   
+   #proyectos ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+   }
+   
+   #proyectos ul li a {
+       text-decoration: none;
+       color: #333;
+   }
+   
+   #proyectos ul li a:hover {
+       text-decoration: underline;
+   }
+
+   #contacto form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#contacto form textarea {
+    height: 100px;
+}
+
+#contacto form input[type="submit"] {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+   #sociales {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+   }
+
+   #sociales li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+   }
+
+   .fa {
+    color: #8e0f92;
+    text-decoration: none;
+    margin-left: 10px;
+   }
+
+   footer {
+    background-color: #42275a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+   }
+
+   .animacion-titulo {
+    animation: aparecer 3s ease-in-out;
+}
+
+.rotating-text-wrapper {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .rotating-text-wrapper h2 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0.3em;
+    color: #ffffff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  .rotating-text-wrapper h2:nth-child(1) {
+    background-color: rgb(186, 12, 221);
+    animation-name: rotating-text-1;
+  }
+  @keyframes rotating-text-1 {
+    0% {
+      transform: translateY(200%);
+    }
+    33% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    34% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(2) {
+    background-color: rgb(158, 62, 134);
+    animation-name: rotating-text-2;
+  }
+  @keyframes rotating-text-2 {
+    33% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    66% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    67% {
+      opacity: 0;
+    }
+  }
+  .rotating-text-wrapper h2:nth-child(3) {
+    background-color: #830088;
+    animation-name: rotating-text-3;
+  }
+  @keyframes rotating-text-3 {
+    66% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    99% {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .rotating-text-wrapper {
+      font-size: 0.7rem;
+    }
+  }
+  

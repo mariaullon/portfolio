@@ -3,20 +3,29 @@
 
     <head>
         <title>Mi Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      </head>
-    
+     
       <body>
+        <div class="rotating-text-wrapper">
+            <h2>Bienvenidos a mi portfolio</h2>
+            <h2>Esto es una animacion</h2>
+            <h2>usando HTML y CSS</h2>
+          </div>
+
           <header>
             <nav>
                 <ul>
-                  <a href="#acerca-de-mi">Acerca de mí</a>
-                  <a href="#habilidades">Habilidades</a>
-                  <a href="#experiencia">Experiencia</a>
-                  <a href="#proyectos">Proyectos</a>
-                  <a href="#contacto">Contacto</a>
+                  <a class="menu-item" href="#acerca-de-mi">Acerca de mí</a>
+                  <a class="menu-item" href="#habilidades">Habilidades</a>
+                  <a class="menu-item" href="#experiencia">Experiencia</a>
+                  <a class="menu-item" href="#proyectos">Proyectos</a>
+                  <a class="menu-item" href="#contacto">Contacto</a>
                 </ul>
               </nav>
             <h1>Maria Ullon</h1>
+            <div id="info"></div>
             <h2>Estudiante</h2>
           </header>
           <main>
@@ -24,16 +33,13 @@
     <section id="acerca-de-mí">
         <h2>Acerca de mí</h2>
         <p>
-            Soy estudiante de marketing, organizada y responsable.
-            Disfruto mucho aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico
-            para sumar nuevos conocimientos.
-            <br> Como desarrollador web junior, fusiono mi pasión por el diseño y la
-            programación para crear experiencias web excepcionales.
-            </br>
-            <br>Estoy comprometida a seguir aprendiendo y mejorando continuamente
-            mientras busco oportunidades desafiantes que amplíen mi experiencia en el
-            desarrollo web.
-            </br>
+            Como desarrollador web junior, fusiono mi pasión por el diseño y la
+programación para crear experiencias web excepcionales. Me esfuerzo por
+cada línea de código y cada detalle de diseño para asegurarme de que mis
+sitios web sean visualmente atractivos, funcionales y accesibles para
+todos. Estoy comprometido a seguir aprendiendo y mejorando continuamente
+mientras busco oportunidades desafiantes que amplíen mi experiencia en el
+desarrollo web.
         </p>
     </section>
 
@@ -43,7 +49,6 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Marketing digital para redes sociales</li>
         </ul>
     </section>
         
@@ -53,10 +58,10 @@
             <li>
                 <b>Restaurant Doña Susana</b> (2019 - 2022)
                 <ul>
-                    <li>Atención al cliente</li>
                     <li>Logística</li>
-                    <li>Manejo de redes sociales</li>
+                    <li>Atención al cliente</li>
                     <li>Cocinera</li>
+                    <li>Manejo de redes sociales</li>
                 </ul>
             </li>
             <li>
@@ -64,6 +69,7 @@
                 <ul>
                     <li>Atención al cliente</li>
                     <li>Ventas</li>
+                    <li>Creación de contenido para redes sociales</li>
                 </ul>
             </li>
         </ul>
@@ -73,8 +79,8 @@
         <h2>Proyectos</h2>
         <ul>
             <li>
-               <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a>
-            <p>Descripción de proyecto 1</p>
+               <a href="https://www.nytimes.com/games/wordle/index.html">Worlde PPY</a>
+            <p>Descripción del proyecto</p>
             </li>
         </ul>
     </section>
@@ -85,12 +91,12 @@
             <li>Email: mariaullon02@gmail.com</li>
             <li>Teléfono: +595 981 278-844</li>
             <li>Redes Sociales:
-                <ul>
+                <ul id="sociales">
                     <li> 
-                        <a href="https://www.instagram.com/pipiullon1/" target="_blank">Instagram</a>
+                        <a class="fa fa-instagram" href="https://www.instagram.com/pipiullon1/?igsh=a291MHFpZG5iNmw4&utm_source=qr"></a>
                     </li>
                     <li>
-                       <a href="https://www.facebook.com/pipiullon1" target="_blank">Facebook</a>
+                       <a class="fa fa-facebook" href="https://www.facebook.com/pipiullon1?mibextid=LQQJ4d"></a>
                     </li>
                 </ul>
             </li>
